@@ -39,6 +39,12 @@ const Hero = () => {
                 Call Now: 469-394-5552
               </a>
             </Button>
+            <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all duration-300 group" asChild>
+              <a href="tel:469-394-5552" className="flex items-center gap-2">
+                <Phone className="w-5 h-5 group-hover:animate-bounce" />
+                Call Or Text 469-394-5552
+              </a>
+            </Button>
             <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-primary/50 hover:bg-primary/10 transition-all duration-300" onClick={scrollToServices}>
               Our Services
             </Button>
