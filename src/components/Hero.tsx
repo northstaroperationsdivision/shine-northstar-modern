@@ -35,7 +35,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all duration-300 group" asChild>
-              <a href="tel:469-394-5552" className="flex items-center gap-2">Call  Or Text 469-394-5552 <Phone className="w-5 h-5 group-hover:animate-bounce" />
+              <a href="tel:469-394-5552" className="flex items-center gap-2">Call  Or Text 469-394-5552<Phone className="w-5 h-5 group-hover:animate-bounce" />
                 Call Now: 469-394-5552
               </a>
             </Button>
