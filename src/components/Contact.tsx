@@ -1,10 +1,8 @@
 import { Phone, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-
 const Contact = () => {
-  return (
-    <section className="py-20 px-4 bg-gradient-to-br from-muted/30 to-background">
+  return <section className="py-20 px-4 bg-gradient-to-br from-muted/30 to-background">
       <div className="container mx-auto">
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
@@ -23,10 +21,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Call Us</h3>
-                <a 
-                  href="tel:469-394-5552" 
-                  className="text-primary hover:text-accent transition-colors text-xl font-semibold"
-                >
+                <a href="tel:469-394-5552" className="text-primary hover:text-accent transition-colors text-xl font-semibold">
                   469-394-5552
                 </a>
               </div>
@@ -40,7 +35,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Hours</h3>
-                <p className="text-muted-foreground text-lg">Mon-Sat: 8AM-6PM</p>
+                <p className="text-muted-foreground text-lg">Mon-Sat: 9AM-6PM</p>
               </div>
             </CardContent>
           </Card>
@@ -59,11 +54,7 @@ const Contact = () => {
         </div>
 
         <div className="text-center">
-          <Button 
-            size="lg" 
-            className="text-lg px-12 py-6 bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all duration-300 group"
-            asChild
-          >
+          <Button size="lg" className="text-lg px-12 py-6 bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all duration-300 group" asChild>
             <a href="tel:469-394-5552" className="flex items-center gap-2">
               <Phone className="w-5 h-5 group-hover:animate-bounce" />
               Call 469-394-5552
@@ -71,8 +62,6 @@ const Contact = () => {
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
