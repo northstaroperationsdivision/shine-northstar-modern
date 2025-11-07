@@ -1,14 +1,13 @@
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/northstar-logo.jpg";
-
 const Hero = () => {
   const scrollToServices = () => {
-    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('services')?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-muted">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-muted">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
@@ -20,11 +19,7 @@ const Hero = () => {
           {/* Logo */}
           <div className="relative group">
             <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-xl group-hover:bg-primary/30 transition-all duration-500" />
-            <img 
-              src={logo} 
-              alt="NorthStar Appliances Logo" 
-              className="relative w-full max-w-2xl h-auto rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
-            />
+            <img src={logo} alt="NorthStar Appliances Logo" className="relative w-full max-w-2xl h-auto rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500" />
           </div>
 
           {/* Headline */}
@@ -39,29 +34,17 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Button 
-              size="lg" 
-              className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all duration-300 group"
-              asChild
-            >
-              <a href="tel:469-394-5552" className="flex items-center gap-2">
-                <Phone className="w-5 h-5 group-hover:animate-bounce" />
+            <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all duration-300 group" asChild>
+              <a href="tel:469-394-5552" className="flex items-center gap-2">Call Today 469-394-5552 or Text Us Anytime<Phone className="w-5 h-5 group-hover:animate-bounce" />
                 Call Now: 469-394-5552
               </a>
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="text-lg px-8 py-6 border-primary/50 hover:bg-primary/10 transition-all duration-300"
-              onClick={scrollToServices}
-            >
+            <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-primary/50 hover:bg-primary/10 transition-all duration-300" onClick={scrollToServices}>
               Our Services
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
