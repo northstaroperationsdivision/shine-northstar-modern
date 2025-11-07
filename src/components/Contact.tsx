@@ -20,7 +20,7 @@ const Contact = () => {
                 <Phone className="w-7 h-7 text-primary-foreground" />
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-2">Call Us</h3>
+                <h3 className="font-bold text-lg mb-2">Call Or Text </h3>
                 <a href="tel:469-394-5552" className="text-primary hover:text-accent transition-colors text-xl font-semibold">
                   469-394-5552
                 </a>
